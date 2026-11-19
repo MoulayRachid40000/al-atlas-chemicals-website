@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://alatlaschemicals.com/assets/hero-refinery.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"AL ATLAS CHEMICALS TRADING L.L.C","alternateName":"الأطلس لتجارة الكيماويات ذ.م.م","url":"https://alatlaschemicals.com/","logo":"https://alatlaschemicals.com/assets/logo-full.png","email":"contact@alatlaschemicals.com","telephone":"+971545244000","identifier":{"@type":"PropertyValue","propertyID":"UAE trade licence","value":"943412"},"knowsAbout":["Wholesale trading of refined petroleum products","Wholesale trading of chemical fertilizers","Wholesale trading of basic industrial chemicals","Import","Export"],"address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"},"location":[{"@type":"Place","name":"Head office · Sharjah","address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"}},{"@type":"Place","name":"Correspondence office · Dubai","telephone":"+97143230091","address":{"@type":"PostalAddress","streetAddress":"Al Hanna Center, Shop #114, Mezzanine Floor, Plot No. 323-1047, Mankhool Road","addressLocality":"Dubai","addressCountry":"AE"}}],"contactPoint":[{"@type":"ContactPoint","contactType":"sales","telephone":"+971545244000","email":"contact@alatlaschemicals.com","availableLanguage":["English","French","Arabic"]}]}
+{"@context":"https://schema.org","@type":"Organization","name":"AL ATLAS CHEMICALS TRADING L.L.C","alternateName":"الأطلس لتجارة الكيماويات ذ.م.م","url":"https://alatlaschemicals.com/","logo":"https://alatlaschemicals.com/assets/logo-full.png","email":"contact@alatlaschemicals.com","telephone":"+971545244000","identifier":{"@type":"PropertyValue","propertyID":"UAE trade licence","value":"943412"},"knowsAbout":["Wholesale trading of refined petroleum products","Wholesale trading of chemical fertilizers","Wholesale trading of basic industrial chemicals","Import","Export"],"address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"},"location":[{"@type":"Place","name":"Head office · Sharjah","address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"}},{"@type":"Place","name":"Correspondence office · Dubai","telephone":"+97143230091","address":{"@type":"PostalAddress","streetAddress":"Al Hanna Center, No. 114, Mezzanine Floor, Plot No. 323-1047, Mankhool Road","addressLocality":"Dubai","addressCountry":"AE"}}],"contactPoint":[{"@type":"ContactPoint","contactType":"sales","telephone":"+971545244000","email":"contact@alatlaschemicals.com","availableLanguage":["English","French","Arabic"]}]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -225,6 +225,34 @@ textarea{min-height:110px;resize:vertical}
 .office-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:auto;padding-top:22px;font-weight:700;font-size:14px;color:var(--teal)}
 .office-links a:hover{color:var(--navy)}
 
+
+.office-photo{position:relative;height:240px;overflow:hidden;background:var(--navy)}
+.office-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.office:hover .office-photo img{transform:scale(1.05)}
+.office-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,21,39,0) 40%,rgba(6,21,39,.65))}
+.office-tag{position:absolute;z-index:1;inset-inline-start:22px;bottom:16px;color:#fff;font-size:10.5px;direction:ltr}
+/* uses strip */
+.uses{background:var(--paper)}
+.uses-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:14px;margin-top:52px}
+.use{position:relative;overflow:hidden;background:var(--navy);color:#fff;display:flex;align-items:flex-end}
+.use:first-child{grid-row:span 2}
+.use img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.use:hover img{transform:scale(1.06)}
+.use:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,21,39,.05) 30%,rgba(6,21,39,.85))}
+.use-c{position:relative;z-index:1;padding:24px 26px}
+.use-c .mono{color:var(--teal-soft)}
+.use-c b{display:block;font:800 22px/1.2 var(--sans);margin-top:8px}
+body[dir=rtl] .use-c b{font-family:var(--ar);font-weight:700}
+.use-c p{margin:8px 0 0;color:#c9d6e0;font-size:14px;line-height:1.6;max-width:38ch}
+/* hero scroll cue */
+.cue{position:absolute;z-index:2;inset-inline-end:40px;bottom:120px;display:flex;flex-direction:column;align-items:center;gap:10px;color:#9fb3c4}
+.cue span{writing-mode:vertical-rl;font:500 10px var(--mono);letter-spacing:.2em;text-transform:uppercase}
+.cue i{width:1px;height:56px;background:linear-gradient(var(--teal-soft),transparent);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.hero-mark{position:absolute;z-index:1;inset-inline-end:-60px;top:50%;transform:translateY(-55%);width:min(620px,48vw);opacity:.07;pointer-events:none}
+@media (max-width:920px){.uses-grid{grid-template-columns:1fr 1fr;grid-template-rows:300px 220px 220px}.use:first-child{grid-column:span 2;grid-row:auto}.cue{display:none}}
+@media (max-width:640px){.uses-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}.use:first-child{grid-column:auto}.office-photo{height:190px}.hero-mark{display:none}}
+
 /* footer */
 .footer{background:var(--night);color:#9fb0c0;padding:70px 0 30px;font-size:14px}
 .f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
@@ -325,6 +353,8 @@ body[dir=rtl] .footer h4{letter-spacing:0}
 <section class="hero" aria-labelledby="h1">
   <div class="hero-bg" role="img" aria-label="Refinery installations at night"></div>
   <div class="hero-grid" aria-hidden="true"></div>
+  <img class="hero-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
+  <div class="cue" aria-hidden="true"><span>Scroll</span><i></i></div>
   <div class="wrap hero-inner">
     <div class="kicker mono" data-i="hero_kicker">UAE · Wholesale trading · Import & export</div>
     <h1 id="h1" data-i="hero_title">Energy, agriculture <em>and industry</em> supplied from the Emirates.</h1>
@@ -424,6 +454,25 @@ body[dir=rtl] .footer h4{letter-spacing:0}
   </div>
 </section>
 
+
+<!-- USES -->
+<section class="sec uses" id="uses">
+  <div class="wrap">
+    <div class="sec-head rv" style="margin-bottom:0">
+      <div><div class="eyebrow mono"><i>—</i><span data-i="us_tag">End uses</span></div>
+      <h2 class="title" data-i="us_title">Materials behind everyday industry.</h2></div>
+      <p style="color:var(--text)" data-i="us_intro">Refined fuels, fertilizers and base chemicals feed the sectors that move goods, grow food and make products.</p>
+    </div>
+    <div class="uses-grid rv">
+      <article class="use"><img src="assets/strip-agriculture.jpg" alt="Wheat field ready for harvest" loading="lazy"><div class="use-c"><span class="mono" data-i="u1_k">Agriculture</span><b data-i="u1_t">Crop nutrition</b><p data-i="u1_d">Chemical fertilizers support yields for growers, blenders and agricultural distributors.</p></div></article>
+      <article class="use"><img src="assets/port-night.jpg" alt="Port cranes at night" loading="lazy"><div class="use-c"><span class="mono" data-i="u2_k">Energy & transport</span><b data-i="u2_t">Fuel supply</b></div></article>
+      <article class="use"><img src="assets/strip-drums.jpg" alt="Industrial drums in a plant" loading="lazy"><div class="use-c"><span class="mono" data-i="u3_k">Manufacturing</span><b data-i="u3_t">Process chemicals</b></div></article>
+      <article class="use"><img src="assets/strip-warehouse.jpg" alt="Bagged goods stacked in a warehouse" loading="lazy"><div class="use-c"><span class="mono" data-i="u4_k">Logistics</span><b data-i="u4_t">Bulk and packed cargo</b></div></article>
+      <article class="use"><img src="assets/chemicals-plant.jpg" alt="Industrial pipework" loading="lazy"><div class="use-c"><span class="mono" data-i="u5_k">Industry</span><b data-i="u5_t">Plant operations</b></div></article>
+    </div>
+  </div>
+</section>
+
 <!-- PROCESS -->
 <section class="sec" id="process">
   <div class="wrap process">
@@ -511,7 +560,7 @@ body[dir=rtl] .footer h4{letter-spacing:0}
     </div>
     <div class="offices">
       <article class="office rv">
-        <div class="office-map" aria-hidden="true"><svg viewBox="0 0 600 150" preserveAspectRatio="xMidYMid slice"><defs><pattern id="g1" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0v30" fill="none" stroke="rgba(127,211,200,.12)"/></pattern></defs><rect width="600" height="150" fill="#0b2545"/><rect width="600" height="150" fill="url(#g1)"/><path d="M0 110C120 90 200 120 300 96s200-40 300-20" stroke="rgba(127,211,200,.35)" stroke-width="2" fill="none"/><path d="M60 0l80 150M380 0l-40 150M0 60h600" stroke="rgba(255,255,255,.08)" stroke-width="6"/><circle cx="300" cy="72" r="26" fill="rgba(43,179,166,.18)"/><circle cx="300" cy="72" r="7" fill="#2bb3a6"/></svg></div>
+        <div class="office-photo"><img src="assets/office-sharjah.jpg" alt="Sharjah skyline and Al Noor Island at sunset" loading="lazy"><span class="office-tag mono">25.35° N · 55.39° E</span></div>
         <div class="office-body">
           <span class="mono" data-i="o1_k">Head office</span>
           <h3 data-i="o1_t">Sharjah</h3>
@@ -520,11 +569,11 @@ body[dir=rtl] .footer h4{letter-spacing:0}
         </div>
       </article>
       <article class="office rv">
-        <div class="office-map" aria-hidden="true"><svg viewBox="0 0 600 150" preserveAspectRatio="xMidYMid slice"><rect width="600" height="150" fill="#13315c"/><rect width="600" height="150" fill="url(#g1)"/><path d="M0 40c150 30 260-10 380 20s160 40 220 30" stroke="rgba(127,211,200,.35)" stroke-width="2" fill="none"/><path d="M200 0l60 150M520 0l-90 150M0 100h600" stroke="rgba(255,255,255,.08)" stroke-width="6"/><circle cx="300" cy="78" r="26" fill="rgba(43,179,166,.18)"/><circle cx="300" cy="78" r="7" fill="#2bb3a6"/></svg></div>
+        <div class="office-photo"><img src="assets/office-dubai.jpg" alt="Dubai skyline at night" loading="lazy"><span class="office-tag mono">25.25° N · 55.30° E</span></div>
         <div class="office-body">
           <span class="mono" data-i="o2_k">Correspondence office</span>
           <h3 data-i="o2_t">Dubai</h3>
-          <address data-i="o2_a">Al Hanna Center, Shop #114, Mezzanine Floor<br>Plot No. 323-1047, Mankhool Road<br>Dubai, United Arab Emirates</address>
+          <address data-i="o2_a">Al Hanna Center, No. 114, Mezzanine Floor<br>Plot No. 323-1047, Mankhool Road<br>Dubai, United Arab Emirates</address>
           <div class="office-links"><a href="https://www.google.com/maps/search/?api=1&query=Al+Hanna+Center+Mankhool+Road+Dubai" target="_blank" rel="noopener" data-i="o_map">Open in Maps ↗</a><a href="tel:+97143230091" class="ltr">+971 4 323 0091</a></div>
         </div>
       </article>
@@ -549,7 +598,7 @@ body[dir=rtl] .footer h4{letter-spacing:0}
 
 <script>
 const T={
-en:{title:'Al Atlas Chemicals Trading L.L.C | Petroleum products, fertilizers & industrial chemicals · UAE',desc:'Al Atlas Chemicals Trading L.L.C — UAE wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export. Head office Sharjah, correspondence office Dubai. Trade licence 943412.',
+en:{us_tag:'End uses',us_title:'Materials behind everyday industry.',us_intro:'Refined fuels, fertilizers and base chemicals feed the sectors that move goods, grow food and make products.',u1_k:'Agriculture',u1_t:'Crop nutrition',u1_d:'Chemical fertilizers support yields for growers, blenders and agricultural distributors.',u2_k:'Energy & transport',u2_t:'Fuel supply',u3_k:'Manufacturing',u3_t:'Process chemicals',u4_k:'Logistics',u4_t:'Bulk and packed cargo',u5_k:'Industry',u5_t:'Plant operations',title:'Al Atlas Chemicals Trading L.L.C | Petroleum products, fertilizers & industrial chemicals · UAE',desc:'Al Atlas Chemicals Trading L.L.C — UAE wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export. Head office Sharjah, correspondence office Dubai. Trade licence 943412.',
 skip:'Skip to content',top:'Head office Sharjah · Correspondence office Dubai · United Arab Emirates',nav_company:'Company',nav_sectors:'Sectors',nav_trade:'Trade',nav_compliance:'Compliance',nav_contact:'Contact',nav_cta:'Request a quotation',
 hero_kicker:'UAE · Wholesale trading · Import & export',hero_title:'Energy, agriculture <em>and industry</em> supplied from the Emirates.',hero_lead:'Al Atlas Chemicals Trading L.L.C is a licensed UAE trading company dealing in refined petroleum products, chemical fertilizers and basic industrial chemicals, for import and export.',hero_cta1:'Request a quotation',hero_cta2:'Our trading sectors',
 f1_l:'Trade licence',f2_l:'Head office',f2_v:'Sharjah, UAE',f3_l:'Correspondence office',f3_v:'Dubai, UAE',f4_l:'Trading sectors',f4_v:'3 product families',
@@ -567,10 +616,10 @@ q_tag:'Request a quotation',q_title:'Tell us what you need.',q_lead:'Complete th
 f_title:'Quotation request',f_req:'* required',f_cat:'Product category <i>*</i>',f_company:'Company <i>*</i>',f_name:'Contact name <i>*</i>',f_email:'Business email <i>*</i>',f_country:'Country',f_product:'Product and specification <i>*</i>',f_qty:'Quantity',f_dest:'Destination',f_inco:'Delivery terms',f_inco_na:'To be discussed',f_pack:'Packaging',f_msg:'Additional information',f_send_email:'Send by email',f_send_wa:'Send by WhatsApp',f_note:'Your email or WhatsApp application opens with the message ready. Review it, then send it from your own account.',
 ph_product:'Product name, grade, standard',ph_qty:'e.g. tonnes per month',ph_dest:'Port or city, country',ph_pack:'Bulk, drums, bags, ISO tank…',ph_msg:'Timing, documents required, other details',
 err:'Please choose a category and fill in the required fields (*).',subj:'Quotation request',m_cat:'Category',m_company:'Company',m_name:'Contact',m_email:'Email',m_country:'Country',m_product:'Product / specification',m_qty:'Quantity',m_dest:'Destination',m_inco:'Delivery terms',m_pack:'Packaging',m_msg:'Details',m_hello:'Hello Al Atlas Chemicals Trading,\nPlease find my quotation request below.',
-of_tag:'Offices',of_title:'Two addresses in the Emirates.',o1_k:'Head office',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, United Arab Emirates',o2_k:'Correspondence office',o2_t:'Dubai',o2_a:'Al Hanna Center, Shop #114, Mezzanine Floor<br>Plot No. 323-1047, Mankhool Road<br>Dubai, United Arab Emirates',o_map:'Open in Maps ↗',
+of_tag:'Offices',of_title:'Two addresses in the Emirates.',o1_k:'Head office',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, United Arab Emirates',o2_k:'Correspondence office',o2_t:'Dubai',o2_a:'Al Hanna Center, No. 114, Mezzanine Floor<br>Plot No. 323-1047, Mankhool Road<br>Dubai, United Arab Emirates',o_map:'Open in Maps ↗',
 ft_about:'Wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export from the United Arab Emirates.',ft_sectors:'Sectors',ft_company:'Company',ft_contact:'Contact',ft_lic:'Trade licence no. 943412 · United Arab Emirates',ft_priv:'This website does not use cookies or store personal data.'},
 
-fr:{title:'Al Atlas Chemicals Trading L.L.C | Produits pétroliers, engrais et chimie industrielle · EAU',desc:'Al Atlas Chemicals Trading L.L.C — négoce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base aux Émirats arabes unis. Import et export. Siège à Sharjah, bureau de correspondance à Dubaï. Licence 943412.',
+fr:{us_tag:'Usages',us_title:'Les matières de l\u2019industrie au quotidien.',us_intro:'Carburants raffinés, engrais et produits chimiques de base alimentent les secteurs qui transportent, cultivent et fabriquent.',u1_k:'Agriculture',u1_t:'Nutrition des cultures',u1_d:'Les engrais chimiques soutiennent les rendements des exploitants, mélangeurs et distributeurs agricoles.',u2_k:'Énergie et transport',u2_t:'Approvisionnement en carburants',u3_k:'Fabrication',u3_t:'Chimie de procédé',u4_k:'Logistique',u4_t:'Vrac et marchandises conditionnées',u5_k:'Industrie',u5_t:'Exploitation des sites',title:'Al Atlas Chemicals Trading L.L.C | Produits pétroliers, engrais et chimie industrielle · EAU',desc:'Al Atlas Chemicals Trading L.L.C — négoce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base aux Émirats arabes unis. Import et export. Siège à Sharjah, bureau de correspondance à Dubaï. Licence 943412.',
 skip:'Aller au contenu',top:'Siège à Sharjah · Bureau de correspondance à Dubaï · Émirats arabes unis',nav_company:'Société',nav_sectors:'Secteurs',nav_trade:'Activités',nav_compliance:'Conformité',nav_contact:'Contact',nav_cta:'Demander un devis',
 hero_kicker:'EAU · Négoce de gros · Import et export',hero_title:'Énergie, agriculture <em>et industrie</em>, depuis les Émirats.',hero_lead:'Al Atlas Chemicals Trading L.L.C est une société de négoce agréée aux Émirats arabes unis. Elle commercialise en gros des produits pétroliers raffinés, des engrais chimiques et des produits chimiques industriels de base, à l’import comme à l’export.',hero_cta1:'Demander un devis',hero_cta2:'Nos secteurs',
 f1_l:'Licence commerciale',f2_l:'Siège',f2_v:'Sharjah, EAU',f3_l:'Bureau de correspondance',f3_v:'Dubaï, EAU',f4_l:'Secteurs',f4_v:'3 familles de produits',
@@ -588,10 +637,10 @@ q_tag:'Demande de devis',q_title:'Dites-nous ce qu’il vous faut.',q_lead:'Remp
 f_title:'Demande de devis',f_req:'* obligatoire',f_cat:'Catégorie de produit <i>*</i>',f_company:'Société <i>*</i>',f_name:'Nom du contact <i>*</i>',f_email:'E-mail professionnel <i>*</i>',f_country:'Pays',f_product:'Produit et spécification <i>*</i>',f_qty:'Quantité',f_dest:'Destination',f_inco:'Conditions de livraison',f_inco_na:'À discuter',f_pack:'Conditionnement',f_msg:'Informations complémentaires',f_send_email:'Envoyer par e-mail',f_send_wa:'Envoyer par WhatsApp',f_note:'Votre messagerie ou WhatsApp s’ouvre avec le message prêt. Relisez-le, puis envoyez-le depuis votre compte.',
 ph_product:'Nom du produit, qualité, norme',ph_qty:'ex. tonnes par mois',ph_dest:'Port ou ville, pays',ph_pack:'Vrac, fûts, sacs, conteneur-citerne…',ph_msg:'Calendrier, documents requis, autres précisions',
 err:'Choisissez une catégorie et remplissez les champs obligatoires (*).',subj:'Demande de devis',m_cat:'Catégorie',m_company:'Société',m_name:'Contact',m_email:'E-mail',m_country:'Pays',m_product:'Produit / spécification',m_qty:'Quantité',m_dest:'Destination',m_inco:'Conditions de livraison',m_pack:'Conditionnement',m_msg:'Précisions',m_hello:'Bonjour Al Atlas Chemicals Trading,\nVoici ma demande de devis.',
-of_tag:'Bureaux',of_title:'Deux adresses aux Émirats.',o1_k:'Siège',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, Émirats arabes unis',o2_k:'Bureau de correspondance',o2_t:'Dubaï',o2_a:'Al Hanna Center, boutique n° 114, mezzanine<br>Parcelle n° 323-1047, Mankhool Road<br>Dubaï, Émirats arabes unis',o_map:'Ouvrir dans Maps ↗',
+of_tag:'Bureaux',of_title:'Deux adresses aux Émirats.',o1_k:'Siège',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, Émirats arabes unis',o2_k:'Bureau de correspondance',o2_t:'Dubaï',o2_a:'Al Hanna Center, n° 114, mezzanine<br>Parcelle n° 323-1047, Mankhool Road<br>Dubaï, Émirats arabes unis',o_map:'Ouvrir dans Maps ↗',
 ft_about:'Commerce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base. Import et export depuis les Émirats arabes unis.',ft_sectors:'Secteurs',ft_company:'Société',ft_contact:'Contact',ft_lic:'Licence commerciale n° 943412 · Émirats arabes unis',ft_priv:'Ce site n’utilise pas de cookies et ne conserve aucune donnée personnelle.'},
 
-ar:{title:'الأطلس لتجارة الكيماويات ذ.م.م | منتجات بترولية وأسمدة وكيماويات صناعية · الإمارات',desc:'الأطلس لتجارة الكيماويات ذ.م.م — تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية في الإمارات. استيراد وتصدير. المقر الرئيسي في الشارقة ومكتب المراسلات في دبي. الرخصة التجارية 943412.',
+ar:{us_tag:'الاستخدامات',us_title:'مواد تقوم عليها الصناعة اليومية.',us_intro:'تغذّي الوقود المكرر والأسمدة والمواد الكيميائية الأساسية القطاعاتِ التي تنقل البضائع وتنتج الغذاء وتصنع المنتجات.',u1_k:'الزراعة',u1_t:'تغذية المحاصيل',u1_d:'تدعم الأسمدة الكيميائية إنتاجية المزارعين ومصانع الخلط والموزعين الزراعيين.',u2_k:'الطاقة والنقل',u2_t:'توريد الوقود',u3_k:'التصنيع',u3_t:'كيماويات المعالجة',u4_k:'الخدمات اللوجستية',u4_t:'بضائع سائبة ومعبأة',u5_k:'الصناعة',u5_t:'تشغيل المنشآت',title:'الأطلس لتجارة الكيماويات ذ.م.م | منتجات بترولية وأسمدة وكيماويات صناعية · الإمارات',desc:'الأطلس لتجارة الكيماويات ذ.م.م — تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية في الإمارات. استيراد وتصدير. المقر الرئيسي في الشارقة ومكتب المراسلات في دبي. الرخصة التجارية 943412.',
 skip:'الانتقال إلى المحتوى',top:'المقر الرئيسي الشارقة · مكتب المراسلات دبي · الإمارات العربية المتحدة',nav_company:'الشركة',nav_sectors:'القطاعات',nav_trade:'الأنشطة',nav_compliance:'الامتثال',nav_contact:'اتصل بنا',nav_cta:'اطلب عرض سعر',
 hero_kicker:'الإمارات · تجارة الجملة · استيراد وتصدير',hero_title:'الطاقة والزراعة <em>والصناعة</em> انطلاقاً من الإمارات.',hero_lead:'الأطلس لتجارة الكيماويات ذ.م.م شركة تجارية مرخّصة في دولة الإمارات العربية المتحدة، تعمل في تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية، استيراداً وتصديراً.',hero_cta1:'اطلب عرض سعر',hero_cta2:'قطاعاتنا التجارية',
 f1_l:'الرخصة التجارية',f2_l:'المقر الرئيسي',f2_v:'الشارقة، الإمارات',f3_l:'مكتب المراسلات',f3_v:'دبي، الإمارات',f4_l:'القطاعات',f4_v:'3 فئات من المنتجات',
@@ -609,7 +658,7 @@ q_tag:'طلب عرض سعر',q_title:'أخبرونا بما تحتاجون.',q_l
 f_title:'طلب عرض سعر',f_req:'* إلزامي',f_cat:'فئة المنتج <i>*</i>',f_company:'الشركة <i>*</i>',f_name:'اسم المسؤول <i>*</i>',f_email:'البريد الإلكتروني للعمل <i>*</i>',f_country:'البلد',f_product:'المنتج والمواصفات <i>*</i>',f_qty:'الكمية',f_dest:'الوجهة',f_inco:'شروط التسليم',f_inco_na:'للنقاش',f_pack:'التعبئة',f_msg:'معلومات إضافية',f_send_email:'إرسال بالبريد الإلكتروني',f_send_wa:'إرسال عبر واتساب',f_note:'يُفتح تطبيق البريد أو واتساب والرسالة جاهزة. راجعوها ثم أرسلوها من حسابكم.',
 ph_product:'اسم المنتج، الدرجة، المعيار',ph_qty:'مثال: طن شهرياً',ph_dest:'الميناء أو المدينة، البلد',ph_pack:'سائب، براميل، أكياس، حاويات صهريجية…',ph_msg:'التوقيت، المستندات المطلوبة، تفاصيل أخرى',
 err:'يرجى اختيار الفئة وتعبئة الحقول الإلزامية (*).',subj:'طلب عرض سعر',m_cat:'الفئة',m_company:'الشركة',m_name:'المسؤول',m_email:'البريد الإلكتروني',m_country:'البلد',m_product:'المنتج / المواصفات',m_qty:'الكمية',m_dest:'الوجهة',m_inco:'شروط التسليم',m_pack:'التعبئة',m_msg:'تفاصيل',m_hello:'مرحباً الأطلس لتجارة الكيماويات،\nفيما يلي طلب عرض السعر الخاص بي.',
-of_tag:'المكاتب',of_title:'عنوانان في الإمارات.',o1_k:'المقر الرئيسي',o1_t:'الشارقة',o1_a:'مركز المسار الأفضل للأعمال<br>خلف شارع العروبة، الشويهين<br>الشارقة، الإمارات العربية المتحدة',o2_k:'مكتب المراسلات',o2_t:'دبي',o2_a:'مركز الحنا، محل رقم 114، طابق الميزانين<br>قطعة رقم 323-1047، طريق المنخول<br>دبي، الإمارات العربية المتحدة',o_map:'فتح في الخرائط ↗',
+of_tag:'المكاتب',of_title:'عنوانان في الإمارات.',o1_k:'المقر الرئيسي',o1_t:'الشارقة',o1_a:'مركز المسار الأفضل للأعمال<br>خلف شارع العروبة، الشويهين<br>الشارقة، الإمارات العربية المتحدة',o2_k:'مكتب المراسلات',o2_t:'دبي',o2_a:'مركز الحنا، رقم 114، طابق الميزانين<br>قطعة رقم 323-1047، طريق المنخول<br>دبي، الإمارات العربية المتحدة',o_map:'فتح في الخرائط ↗',
 ft_about:'تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية. استيراد وتصدير من الإمارات العربية المتحدة.',ft_sectors:'القطاعات',ft_company:'الشركة',ft_contact:'اتصل بنا',ft_lic:'الرخصة التجارية رقم 943412 · الإمارات العربية المتحدة',ft_priv:'لا يستخدم هذا الموقع ملفات تعريف الارتباط ولا يخزّن بيانات شخصية.'}
 };
 let L='en';
