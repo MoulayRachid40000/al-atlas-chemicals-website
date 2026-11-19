@@ -18,7 +18,7 @@
 <meta property="og:title" content="Al Atlas Chemicals Trading L.L.C">
 <meta property="og:description" content="Wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals · Import · Export · Sharjah & Dubai, UAE">
 <meta property="og:url" content="https://alatlaschemicals.com/">
-<meta property="og:image" content="https://alatlaschemicals.com/assets/hero-refinery.jpg">
+<meta property="og:image" content="https://alatlaschemicals.com/assets/hero-gas-carrier.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"AL ATLAS CHEMICALS TRADING L.L.C","alternateName":"الأطلس لتجارة الكيماويات ذ.م.م","url":"https://alatlaschemicals.com/","logo":"https://alatlaschemicals.com/assets/logo-full.png","email":"contact@alatlaschemicals.com","telephone":"+971545244000","identifier":{"@type":"PropertyValue","propertyID":"UAE trade licence","value":"943412"},"knowsAbout":["Wholesale trading of refined petroleum products","Wholesale trading of chemical fertilizers","Wholesale trading of basic industrial chemicals","Import","Export"],"address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"},"location":[{"@type":"Place","name":"Head office · Sharjah","address":{"@type":"PostalAddress","streetAddress":"Al Masar Al Afdal Business Center, Behind Al Arouba Street, Al Shuwaiheen","addressLocality":"Sharjah","addressCountry":"AE"}},{"@type":"Place","name":"Correspondence office · Dubai","telephone":"+97143230091","address":{"@type":"PostalAddress","streetAddress":"Al Hanna Center, No. 114, Mezzanine Floor, Plot No. 323-1047, Mankhool Road","addressLocality":"Dubai","addressCountry":"AE"}}],"contactPoint":[{"@type":"ContactPoint","contactType":"sales","telephone":"+971545244000","email":"contact@alatlaschemicals.com","availableLanguage":["English","French","Arabic"]}]}
@@ -77,7 +77,7 @@ body[dir=rtl] .mono{font-family:var(--ar);letter-spacing:0;font-size:12px}
 
 /* hero */
 .hero{position:relative;min-height:min(800px,calc(100vh - 116px));display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:var(--night)}
-.hero-bg{position:absolute;inset:0;background:url('assets/hero-refinery.jpg') center 40%/cover;transform:scale(1.06);animation:drift 22s ease-out forwards}
+.hero-bg{position:absolute;inset:0;background:url('assets/hero-gas-carrier.jpg') 62% 55%/cover;transform:scale(1.06);animation:drift 22s ease-out forwards}
 @keyframes drift{to{transform:scale(1)}}
 .hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(6,21,39,.94) 0%,rgba(6,21,39,.72) 42%,rgba(6,21,39,.25) 100%),linear-gradient(0deg,rgba(6,21,39,.9) 0%,rgba(6,21,39,0) 45%)}
 body[dir=rtl] .hero:before{background:linear-gradient(270deg,rgba(6,21,39,.94) 0%,rgba(6,21,39,.72) 42%,rgba(6,21,39,.25) 100%),linear-gradient(0deg,rgba(6,21,39,.9) 0%,rgba(6,21,39,0) 45%)}
@@ -173,7 +173,7 @@ body[dir=rtl] .s-body h3{letter-spacing:0;line-height:1.4;font-weight:700}
 
 /* compliance band */
 .band{position:relative;color:#fff;overflow:hidden;background:var(--navy)}
-.band-bg{position:absolute;inset:0;background:url('assets/port-night.jpg') center/cover;opacity:.32}
+.band-bg{position:absolute;inset:0;background:url('assets/fleet-tanker-sunrise.jpg') center 60%/cover;opacity:.38}
 .band:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,37,69,.97),rgba(11,37,69,.7));z-index:1}
 .band .wrap{position:relative;z-index:2}
 .band h2.title{color:#fff;max-width:20ch}
@@ -251,7 +251,28 @@ body[dir=rtl] .use-c b{font-family:var(--ar);font-weight:700}
 @keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 .hero-mark{position:absolute;z-index:1;inset-inline-end:-60px;top:50%;transform:translateY(-55%);width:min(620px,48vw);opacity:.07;pointer-events:none}
 @media (max-width:920px){.uses-grid{grid-template-columns:1fr 1fr;grid-template-rows:300px 220px 220px}.use:first-child{grid-column:span 2;grid-row:auto}.cue{display:none}}
-@media (max-width:640px){.uses-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}.use:first-child{grid-column:auto}.office-photo{height:190px}.hero-mark{display:none}}
+@media (max-width:640px){.hero:before,body[dir=rtl] .hero:before{background:linear-gradient(180deg,rgba(6,21,39,.3) 0%,rgba(6,21,39,.7) 32%,rgba(6,21,39,.9) 60%,rgba(6,21,39,.96) 100%)}.hero-bg{background-position:68% 40%!important}.uses-grid{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}.use:first-child{grid-column:auto}.office-photo{height:190px}.hero-mark{display:none}}
+
+
+/* logistics */
+.logi{background:var(--night);color:#fff;position:relative;overflow:hidden}
+.logi h2.title{color:#fff}
+.logi .sec-head p{color:#a9b9c8}
+.logi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lcard{position:relative;min-height:520px;overflow:hidden;display:flex;align-items:flex-end;border:1px solid var(--line-dark);background:#0a1e36}
+.lcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.lcard:hover img{transform:scale(1.06)}
+.lcard:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,21,39,.1) 25%,rgba(6,21,39,.92) 78%)}
+.lcard-c{position:relative;z-index:1;padding:30px 28px}
+.lcard-c .mono{color:var(--teal-soft)}
+.lcard-c h3{font:800 26px/1.15 var(--sans);margin:10px 0 10px;letter-spacing:-.01em}
+body[dir=rtl] .lcard-c h3{font-family:var(--ar);font-weight:700;line-height:1.4}
+.lcard-c p{margin:0;color:#c3d1dc;font-size:14.5px;line-height:1.7}
+.lcard-n{position:absolute;z-index:1;top:22px;inset-inline-start:24px;font:500 12px var(--mono);color:#fff;border:1px solid rgba(255,255,255,.4);padding:6px 9px;letter-spacing:.1em}
+.incos{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-dark)}
+.incos .mono{color:#8ea3b6;margin-inline-end:8px}
+.incos b{font:500 13px var(--mono);padding:8px 14px;border:1px solid rgba(127,211,200,.35);color:#dff3ef;letter-spacing:.08em}
+@media (max-width:920px){.logi-grid{grid-template-columns:1fr}.lcard{min-height:400px}}
 
 /* footer */
 .footer{background:var(--night);color:#9fb0c0;padding:70px 0 30px;font-size:14px}
@@ -335,6 +356,7 @@ body[dir=rtl] .footer h4{letter-spacing:0}
   <nav class="menu" id="menu" aria-label="Main">
     <a href="#company" data-i="nav_company">Company</a>
     <a href="#sectors" data-i="nav_sectors">Sectors</a>
+    <a href="#logistics" data-i="nav_logi">Logistics</a>
     <a href="#trade" data-i="nav_trade">Trade</a>
     <a href="#compliance" data-i="nav_compliance">Compliance</a>
     <a href="#contact" data-i="nav_contact">Contact</a>
@@ -351,7 +373,7 @@ body[dir=rtl] .footer h4{letter-spacing:0}
 <main id="main">
 <!-- HERO -->
 <section class="hero" aria-labelledby="h1">
-  <div class="hero-bg" role="img" aria-label="Refinery installations at night"></div>
+  <div class="hero-bg" role="img" aria-label="Liquefied gas carrier leaving a terminal at dusk"></div>
   <div class="hero-grid" aria-hidden="true"></div>
   <img class="hero-mark" src="assets/logo-mark-white.png" alt="" aria-hidden="true">
   <div class="cue" aria-hidden="true"><span>Scroll</span><i></i></div>
@@ -436,6 +458,24 @@ body[dir=rtl] .footer h4{letter-spacing:0}
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+
+<!-- LOGISTICS -->
+<section class="sec logi" id="logistics">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><div class="eyebrow mono" style="color:var(--teal-soft)"><i>—</i><span data-i="lg_tag">Logistics</span></div>
+      <h2 class="title" data-i="lg_title">Moved by sea and by road.</h2></div>
+      <p data-i="lg_intro">Depending on the product, the volume and the destination, deliveries are agreed by sea or by road, under the Incoterm set in the contract.</p>
+    </div>
+    <div class="logi-grid">
+      <article class="lcard rv"><img src="assets/fleet-product-tanker.jpg" alt="Product tanker alongside a terminal at dusk" loading="lazy"><span class="lcard-n">01</span><div class="lcard-c"><span class="mono" data-i="l1_k">Sea · Liquid bulk</span><h3 data-i="l1_t">Product tankers</h3><p data-i="l1_d">Diesel and other refined fuels travel in bulk on product tankers, loaded and discharged at terminal.</p></div></article>
+      <article class="lcard rv"><img src="assets/hero-gas-carrier.jpg" alt="Liquefied gas carrier at a terminal" loading="lazy" style="object-position:70% 50%"><span class="lcard-n">02</span><div class="lcard-c"><span class="mono" data-i="l2_k">Sea · Liquefied gases</span><h3 data-i="l2_t">Gas carriers</h3><p data-i="l2_d">Liquefied gases are shipped on dedicated gas carriers built to keep cargo under pressure or at low temperature.</p></div></article>
+      <article class="lcard rv"><img src="assets/fleet-road-tanker.jpg" alt="Stainless steel road tankers" loading="lazy"><span class="lcard-n">03</span><div class="lcard-c"><span class="mono" data-i="l3_k">Road · Regional</span><h3 data-i="l3_t">Road tankers</h3><p data-i="l3_d">For regional and inland deliveries, tank trucks complete the last leg to depots, plants and sites.</p></div></article>
+    </div>
+    <div class="incos rv"><span class="mono" data-i="lg_inco">Delivery terms on request</span><b>FOB</b><b>CFR</b><b>CIF</b><b>FCA</b><b>DAP</b><b>EXW</b></div>
   </div>
 </section>
 
@@ -598,7 +638,7 @@ body[dir=rtl] .footer h4{letter-spacing:0}
 
 <script>
 const T={
-en:{us_tag:'End uses',us_title:'Materials behind everyday industry.',us_intro:'Refined fuels, fertilizers and base chemicals feed the sectors that move goods, grow food and make products.',u1_k:'Agriculture',u1_t:'Crop nutrition',u1_d:'Chemical fertilizers support yields for growers, blenders and agricultural distributors.',u2_k:'Energy & transport',u2_t:'Fuel supply',u3_k:'Manufacturing',u3_t:'Process chemicals',u4_k:'Logistics',u4_t:'Bulk and packed cargo',u5_k:'Industry',u5_t:'Plant operations',title:'Al Atlas Chemicals Trading L.L.C | Petroleum products, fertilizers & industrial chemicals · UAE',desc:'Al Atlas Chemicals Trading L.L.C — UAE wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export. Head office Sharjah, correspondence office Dubai. Trade licence 943412.',
+en:{nav_logi:'Logistics',lg_tag:'Logistics',lg_title:'Moved by sea and by road.',lg_intro:'Depending on the product, the volume and the destination, deliveries are agreed by sea or by road, under the Incoterm set in the contract.',l1_k:'Sea · Liquid bulk',l1_t:'Product tankers',l1_d:'Diesel and other refined fuels travel in bulk on product tankers, loaded and discharged at terminal.',l2_k:'Sea · Liquefied gases',l2_t:'Gas carriers',l2_d:'Liquefied gases are shipped on dedicated gas carriers built to keep cargo under pressure or at low temperature.',l3_k:'Road · Regional',l3_t:'Road tankers',l3_d:'For regional and inland deliveries, tank trucks complete the last leg to depots, plants and sites.',lg_inco:'Delivery terms on request',us_tag:'End uses',us_title:'Materials behind everyday industry.',us_intro:'Refined fuels, fertilizers and base chemicals feed the sectors that move goods, grow food and make products.',u1_k:'Agriculture',u1_t:'Crop nutrition',u1_d:'Chemical fertilizers support yields for growers, blenders and agricultural distributors.',u2_k:'Energy & transport',u2_t:'Fuel supply',u3_k:'Manufacturing',u3_t:'Process chemicals',u4_k:'Logistics',u4_t:'Bulk and packed cargo',u5_k:'Industry',u5_t:'Plant operations',title:'Al Atlas Chemicals Trading L.L.C | Petroleum products, fertilizers & industrial chemicals · UAE',desc:'Al Atlas Chemicals Trading L.L.C — UAE wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export. Head office Sharjah, correspondence office Dubai. Trade licence 943412.',
 skip:'Skip to content',top:'Head office Sharjah · Correspondence office Dubai · United Arab Emirates',nav_company:'Company',nav_sectors:'Sectors',nav_trade:'Trade',nav_compliance:'Compliance',nav_contact:'Contact',nav_cta:'Request a quotation',
 hero_kicker:'UAE · Wholesale trading · Import & export',hero_title:'Energy, agriculture <em>and industry</em> supplied from the Emirates.',hero_lead:'Al Atlas Chemicals Trading L.L.C is a licensed UAE trading company dealing in refined petroleum products, chemical fertilizers and basic industrial chemicals, for import and export.',hero_cta1:'Request a quotation',hero_cta2:'Our trading sectors',
 f1_l:'Trade licence',f2_l:'Head office',f2_v:'Sharjah, UAE',f3_l:'Correspondence office',f3_v:'Dubai, UAE',f4_l:'Trading sectors',f4_v:'3 product families',
@@ -619,7 +659,7 @@ err:'Please choose a category and fill in the required fields (*).',subj:'Quotat
 of_tag:'Offices',of_title:'Two addresses in the Emirates.',o1_k:'Head office',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, United Arab Emirates',o2_k:'Correspondence office',o2_t:'Dubai',o2_a:'Al Hanna Center, No. 114, Mezzanine Floor<br>Plot No. 323-1047, Mankhool Road<br>Dubai, United Arab Emirates',o_map:'Open in Maps ↗',
 ft_about:'Wholesale trading of refined petroleum products, chemical fertilizers and basic industrial chemicals. Import and export from the United Arab Emirates.',ft_sectors:'Sectors',ft_company:'Company',ft_contact:'Contact',ft_lic:'Trade licence no. 943412 · United Arab Emirates',ft_priv:'This website does not use cookies or store personal data.'},
 
-fr:{us_tag:'Usages',us_title:'Les matières de l\u2019industrie au quotidien.',us_intro:'Carburants raffinés, engrais et produits chimiques de base alimentent les secteurs qui transportent, cultivent et fabriquent.',u1_k:'Agriculture',u1_t:'Nutrition des cultures',u1_d:'Les engrais chimiques soutiennent les rendements des exploitants, mélangeurs et distributeurs agricoles.',u2_k:'Énergie et transport',u2_t:'Approvisionnement en carburants',u3_k:'Fabrication',u3_t:'Chimie de procédé',u4_k:'Logistique',u4_t:'Vrac et marchandises conditionnées',u5_k:'Industrie',u5_t:'Exploitation des sites',title:'Al Atlas Chemicals Trading L.L.C | Produits pétroliers, engrais et chimie industrielle · EAU',desc:'Al Atlas Chemicals Trading L.L.C — négoce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base aux Émirats arabes unis. Import et export. Siège à Sharjah, bureau de correspondance à Dubaï. Licence 943412.',
+fr:{nav_logi:'Logistique',lg_tag:'Logistique',lg_title:'Par la mer et par la route.',lg_intro:'Selon le produit, le volume et la destination, la livraison est convenue par voie maritime ou routière, selon l\u2019Incoterm fixé au contrat.',l1_k:'Mer · Vrac liquide',l1_t:'Navires pétroliers',l1_d:'Le gazole et les autres carburants raffinés voyagent en vrac sur des pétroliers de produits, chargés et déchargés en terminal.',l2_k:'Mer · Gaz liquéfiés',l2_t:'Navires gaziers',l2_d:'Les gaz liquéfiés sont expédiés sur des navires gaziers dédiés, conçus pour maintenir la cargaison sous pression ou à basse température.',l3_k:'Route · Régional',l3_t:'Camions-citernes',l3_d:'Pour les livraisons régionales et terrestres, les camions-citernes assurent le dernier trajet vers les dépôts, usines et sites.',lg_inco:'Conditions de livraison sur demande',us_tag:'Usages',us_title:'Les matières de l\u2019industrie au quotidien.',us_intro:'Carburants raffinés, engrais et produits chimiques de base alimentent les secteurs qui transportent, cultivent et fabriquent.',u1_k:'Agriculture',u1_t:'Nutrition des cultures',u1_d:'Les engrais chimiques soutiennent les rendements des exploitants, mélangeurs et distributeurs agricoles.',u2_k:'Énergie et transport',u2_t:'Approvisionnement en carburants',u3_k:'Fabrication',u3_t:'Chimie de procédé',u4_k:'Logistique',u4_t:'Vrac et marchandises conditionnées',u5_k:'Industrie',u5_t:'Exploitation des sites',title:'Al Atlas Chemicals Trading L.L.C | Produits pétroliers, engrais et chimie industrielle · EAU',desc:'Al Atlas Chemicals Trading L.L.C — négoce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base aux Émirats arabes unis. Import et export. Siège à Sharjah, bureau de correspondance à Dubaï. Licence 943412.',
 skip:'Aller au contenu',top:'Siège à Sharjah · Bureau de correspondance à Dubaï · Émirats arabes unis',nav_company:'Société',nav_sectors:'Secteurs',nav_trade:'Activités',nav_compliance:'Conformité',nav_contact:'Contact',nav_cta:'Demander un devis',
 hero_kicker:'EAU · Négoce de gros · Import et export',hero_title:'Énergie, agriculture <em>et industrie</em>, depuis les Émirats.',hero_lead:'Al Atlas Chemicals Trading L.L.C est une société de négoce agréée aux Émirats arabes unis. Elle commercialise en gros des produits pétroliers raffinés, des engrais chimiques et des produits chimiques industriels de base, à l’import comme à l’export.',hero_cta1:'Demander un devis',hero_cta2:'Nos secteurs',
 f1_l:'Licence commerciale',f2_l:'Siège',f2_v:'Sharjah, EAU',f3_l:'Bureau de correspondance',f3_v:'Dubaï, EAU',f4_l:'Secteurs',f4_v:'3 familles de produits',
@@ -640,7 +680,7 @@ err:'Choisissez une catégorie et remplissez les champs obligatoires (*).',subj:
 of_tag:'Bureaux',of_title:'Deux adresses aux Émirats.',o1_k:'Siège',o1_t:'Sharjah',o1_a:'Al Masar Al Afdal Business Center<br>Behind Al Arouba Street, Al Shuwaiheen<br>Sharjah, Émirats arabes unis',o2_k:'Bureau de correspondance',o2_t:'Dubaï',o2_a:'Al Hanna Center, n° 114, mezzanine<br>Parcelle n° 323-1047, Mankhool Road<br>Dubaï, Émirats arabes unis',o_map:'Ouvrir dans Maps ↗',
 ft_about:'Commerce de gros de produits pétroliers raffinés, d’engrais chimiques et de produits chimiques industriels de base. Import et export depuis les Émirats arabes unis.',ft_sectors:'Secteurs',ft_company:'Société',ft_contact:'Contact',ft_lic:'Licence commerciale n° 943412 · Émirats arabes unis',ft_priv:'Ce site n’utilise pas de cookies et ne conserve aucune donnée personnelle.'},
 
-ar:{us_tag:'الاستخدامات',us_title:'مواد تقوم عليها الصناعة اليومية.',us_intro:'تغذّي الوقود المكرر والأسمدة والمواد الكيميائية الأساسية القطاعاتِ التي تنقل البضائع وتنتج الغذاء وتصنع المنتجات.',u1_k:'الزراعة',u1_t:'تغذية المحاصيل',u1_d:'تدعم الأسمدة الكيميائية إنتاجية المزارعين ومصانع الخلط والموزعين الزراعيين.',u2_k:'الطاقة والنقل',u2_t:'توريد الوقود',u3_k:'التصنيع',u3_t:'كيماويات المعالجة',u4_k:'الخدمات اللوجستية',u4_t:'بضائع سائبة ومعبأة',u5_k:'الصناعة',u5_t:'تشغيل المنشآت',title:'الأطلس لتجارة الكيماويات ذ.م.م | منتجات بترولية وأسمدة وكيماويات صناعية · الإمارات',desc:'الأطلس لتجارة الكيماويات ذ.م.م — تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية في الإمارات. استيراد وتصدير. المقر الرئيسي في الشارقة ومكتب المراسلات في دبي. الرخصة التجارية 943412.',
+ar:{nav_logi:'اللوجستيات',lg_tag:'الخدمات اللوجستية',lg_title:'عبر البحر والبر.',lg_intro:'بحسب المنتج والكمية والوجهة، يُتفق على التسليم بحراً أو براً وفق شروط التسليم المحددة في العقد.',l1_k:'بحر · سوائل سائبة',l1_t:'ناقلات المنتجات البترولية',l1_d:'يُنقل الديزل وأنواع الوقود المكرر الأخرى سائباً على ناقلات المنتجات، ويُحمّل ويُفرّغ في المحطات.',l2_k:'بحر · غازات مسالة',l2_t:'ناقلات الغاز',l2_d:'تُشحن الغازات المسالة على ناقلات غاز مخصصة مصممة لحفظ الشحنة تحت الضغط أو في درجات حرارة منخفضة.',l3_k:'بر · إقليمي',l3_t:'الصهاريج البرية',l3_d:'للتسليم الإقليمي والداخلي، تُكمل الشاحنات الصهريجية المرحلة الأخيرة إلى المستودعات والمصانع والمواقع.',lg_inco:'شروط التسليم عند الطلب',us_tag:'الاستخدامات',us_title:'مواد تقوم عليها الصناعة اليومية.',us_intro:'تغذّي الوقود المكرر والأسمدة والمواد الكيميائية الأساسية القطاعاتِ التي تنقل البضائع وتنتج الغذاء وتصنع المنتجات.',u1_k:'الزراعة',u1_t:'تغذية المحاصيل',u1_d:'تدعم الأسمدة الكيميائية إنتاجية المزارعين ومصانع الخلط والموزعين الزراعيين.',u2_k:'الطاقة والنقل',u2_t:'توريد الوقود',u3_k:'التصنيع',u3_t:'كيماويات المعالجة',u4_k:'الخدمات اللوجستية',u4_t:'بضائع سائبة ومعبأة',u5_k:'الصناعة',u5_t:'تشغيل المنشآت',title:'الأطلس لتجارة الكيماويات ذ.م.م | منتجات بترولية وأسمدة وكيماويات صناعية · الإمارات',desc:'الأطلس لتجارة الكيماويات ذ.م.م — تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية في الإمارات. استيراد وتصدير. المقر الرئيسي في الشارقة ومكتب المراسلات في دبي. الرخصة التجارية 943412.',
 skip:'الانتقال إلى المحتوى',top:'المقر الرئيسي الشارقة · مكتب المراسلات دبي · الإمارات العربية المتحدة',nav_company:'الشركة',nav_sectors:'القطاعات',nav_trade:'الأنشطة',nav_compliance:'الامتثال',nav_contact:'اتصل بنا',nav_cta:'اطلب عرض سعر',
 hero_kicker:'الإمارات · تجارة الجملة · استيراد وتصدير',hero_title:'الطاقة والزراعة <em>والصناعة</em> انطلاقاً من الإمارات.',hero_lead:'الأطلس لتجارة الكيماويات ذ.م.م شركة تجارية مرخّصة في دولة الإمارات العربية المتحدة، تعمل في تجارة الجملة للمنتجات البترولية المكررة والأسمدة الكيميائية والمواد الكيميائية الصناعية الأساسية، استيراداً وتصديراً.',hero_cta1:'اطلب عرض سعر',hero_cta2:'قطاعاتنا التجارية',
 f1_l:'الرخصة التجارية',f2_l:'المقر الرئيسي',f2_v:'الشارقة، الإمارات',f3_l:'مكتب المراسلات',f3_v:'دبي، الإمارات',f4_l:'القطاعات',f4_v:'3 فئات من المنتجات',
